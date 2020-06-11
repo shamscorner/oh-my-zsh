@@ -42,7 +42,7 @@ POWERLEVEL9K_MODE='nerdfont-complete'
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"
@@ -141,8 +141,12 @@ POWERLEVEL9K_STATUS_CROSS=true
 POWERLEVEL9K_TIME_ICON=""
 
 # Alias
+alias lc='colorls -lA --sd'
+alias ls="colorls --sd -A"
 alias ..="cd .."
 alias ....="cd ../.."
 alias prs="cd ~/Projects"
 alias ds="cd ~/Downloads"
 alias clr="clear"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
